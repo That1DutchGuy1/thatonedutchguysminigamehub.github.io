@@ -1,4 +1,4 @@
-/* Matching the game's font and background */
+/* Game's font and background */
 body {
   font-family: 'Comic Sans MS', cursive;
   font-weight: bold;
@@ -20,7 +20,7 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-/* Big, chunky header with the same text shadow as the game */
+/* Big, chunky header with text shadow */
 h1 {
   font-size: 4rem;
   text-shadow: 4px 4px 0px #fff;
@@ -36,7 +36,7 @@ h1 {
   flex-wrap: wrap;
 }
 
-/* Redesigning cards to look like the Game-Over/Scoreboard popups */
+/* The game cards */
 .game-card {
   background: white;
   border: 6px solid #333; /* Thick borders */
@@ -45,6 +45,9 @@ h1 {
   width: 300px;
   box-shadow: 10px 10px 0px rgba(0,0,0,0.1); /* Flat shadow */
   transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .game-card:hover {
@@ -64,7 +67,7 @@ h1 {
   margin-bottom: 25px;
 }
 
-/* Matching the game's Start Button style */
+/* Game's Play Button style */
 .play-button {
   display: inline-block;
   background-color: #ff00ff; /* Same magenta as start button */
@@ -77,6 +80,7 @@ h1 {
   text-decoration: none;
   transition: transform 0.1s, background-color 0.2s;
   cursor: pointer;
+  margin-top: auto;
 }
 
 .play-button:hover {
@@ -84,7 +88,7 @@ h1 {
   background-color: #ff33ff;
 }
 
-/* Optional: Add the creator link style from the game to the hub too */
+/* YouTube link */
 #creator-link {
   display: inline-block;
   margin-top: 50px;

@@ -1,0 +1,100 @@
+/* Matching the game's font and background */
+body {
+  font-family: 'Comic Sans MS', cursive;
+  font-weight: bold;
+  /* Animated Meme Background: A shifting rainbow gradient */
+  background: linear-gradient(-45deg, #ffff00, #ff00ff, #00ffff, #7bff00);
+  background-size: 400% 400%;
+  animation: meme-wave 10s ease infinite;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 50px 20px;
+  overflow-x: hidden;
+}
+
+/* Definition for the background animation */
+@keyframes meme-wave {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Big, chunky header with the same text shadow as the game */
+h1 {
+  font-size: 4rem;
+  text-shadow: 4px 4px 0px #fff;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+/* Flex container for the game cards */
+.game-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Redesigning cards to look like the Game-Over/Scoreboard popups */
+.game-card {
+  background: white;
+  border: 6px solid #333; /* Thick borders */
+  border-radius: 25px;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 10px 10px 0px rgba(0,0,0,0.1); /* Flat shadow */
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.game-card:hover {
+  transform: scale(1.05) rotate(-2deg); /* Added a slight "meme" tilt on hover */
+  border-color: #ff00ff; /* Highlights in Magenta */
+}
+
+.game-card h3 {
+  font-size: 2.2rem;
+  margin-top: 0;
+  color: #333;
+}
+
+.game-card p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin-bottom: 25px;
+}
+
+/* Matching the game's Start Button style */
+.play-button {
+  display: inline-block;
+  background-color: #ff00ff; /* Same magenta as start button */
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: 4px solid #333;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: transform 0.1s, background-color 0.2s;
+  cursor: pointer;
+}
+
+.play-button:hover {
+  transform: scale(1.1);
+  background-color: #ff33ff;
+}
+
+/* Optional: Add the creator link style from the game to the hub too */
+#creator-link {
+  display: inline-block;
+  margin-top: 50px;
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #333;
+  transition: transform 0.2s;
+}
+
+#creator-link:hover {
+  transform: scale(1.1);
+  color: #ff00ff;
+}

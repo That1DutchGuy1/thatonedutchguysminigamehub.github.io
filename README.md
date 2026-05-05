@@ -1,3 +1,8 @@
+NEW UPDATE!!
+Added more memes to Whack A Meme.
+Removed the Obama Prism meme from Whack A Meme.
+Added a work in progress Rick Astley themed game.
+
 This is a work in process minigame hub I made.
 For people who don't know me, I'm retired YouTuber That One Dutch Guy.
 More minigames will be added in the future.

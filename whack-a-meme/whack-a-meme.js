@@ -22,9 +22,9 @@ const niceScoreSound = document.getElementById('nice-score-sound');
 const excellentScoreSound = document.getElementById('excellent-score-sound');
 
 const memes = [
-  'Trollface.png', 'Pingas.png', 'Obamaprism.png',
-  'Morshu-CD-i.png', 'Yippee.png', 'PepeTheFrog.png',
-  'Immafirinmahlazer.png', 'HotelMario.png', 'King-CD-i.png', 'Hampter.png',
+  'Trollface.png', 'Pingas.png', 'Weegee.png', 'Zelda-Cd-i.png', 'Ganon-CD-i.png', 'HotelMarioBowser.png', 'HotelMarioPrincessPeach.png',
+  'Morshu-CD-i.png', 'yippee-autism-creature.png', 'PepeTheFrog.png', 'Link-CD-i.png', 'Gwonam-CD-i.png',
+  'Immafirinmahlazer.png', 'HotelMarioMario.png', 'HotelMarioLuigi.png', 'King-Harkinian-CD-i.png', 'Hampter.png', 'phil-swift.png',
   'Rickroll.png' 
 ];
 

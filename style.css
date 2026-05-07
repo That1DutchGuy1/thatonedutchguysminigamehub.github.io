@@ -13,6 +13,25 @@ body {
   overflow-x: hidden;
 }
 
+.brand-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.main-logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.text-logo {
+  width: 400px;
+  max-width: 90%;
+  height: auto;
+}
+
 /* Definition for the background animation */
 @keyframes meme-wave {
   0% { background-position: 0% 50%; }
@@ -24,6 +43,7 @@ body {
 h1 {
   font-size: 4rem;
   text-shadow: 4px 4px 0px #fff;
+  margin-top: 10px;
   margin-bottom: 40px;
   text-transform: uppercase;
 }

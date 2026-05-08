@@ -1,7 +1,7 @@
 NEW UPDATE!!
-Added more memes to Whack A Meme.
-Removed the Obama Prism meme from Whack A Meme.
-Added a work in progress Rick Astley themed game.
+More progress on the Rick Roller 2D beta version. 
+Changed all the fonts from Bup The Super Awesome Clicker Game to Comic Sans MS. 
+Added the new Philips CD-i Meme Soundboard. 
 
 
 
@@ -11,7 +11,7 @@ More minigames will be added in the future.
 
 
 
-Q \& A:
+Q & A:
 
 Q: Is this mobile friendly?
 A: Kinda. I tested the game on my Samsung Galaxy S22 and the code works just fine, but the layout is messy.

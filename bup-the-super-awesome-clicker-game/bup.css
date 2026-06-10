@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Comic Sans MS';
+  src: url('../Comic-Sans-MS.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
   background-image: url("bup.jpg");
   background-color: #cccccc;
@@ -9,7 +16,7 @@ body {
 h1 {
 text-align: center;
 vertical-align: baseline;
-font-family: Tahoma, Verdana, sans-serif;
+font-family: 'Comic Sans MS', sans-serif;
 font-weight: bold;
 font-size: 125px;
 color: blue;
@@ -23,7 +30,7 @@ border: 4px solid black;
 border-radius: 4px; 
 padding: 32px 64px;
 cursor: pointer;
-font-family: Tahoma, Verdana, sans-serif;
+font-family: 'Comic Sans MS', sans-serif;
 font-size: 32px;
 margin: 0;
 position: absolute;
@@ -34,7 +41,7 @@ transform: translate(-50%, -50%);
 }
 
 div {
-font-family: Tahoma, Verdana, sans-serif;
+font-family: 'Comic Sans MS', sans-serif;
 font-weight: bold;
 font-size: 64px;
 color: green;
@@ -44,7 +51,7 @@ text-align: center;
 }
 
 p {
-font-family: Tahoma, Verdana, sans-serif;
+font-family: 'Comic Sans MS', sans-serif;
 font-weight: bold;
 font-size: 48px;
 color: yellow;
@@ -60,7 +67,7 @@ a {
 text-align: right;
 text-decoration: none;
 vertical-align: text-bottom;
-font-family: Tahoma, Verdana, sans-serif;
+font-family: 'Comic Sans MS', sans-serif;
 font-size: 21px;
 font-weight: bold;
 color: purple;
@@ -77,7 +84,7 @@ left: 95%;
 position: absolute;
 transform: translateX(-50%);
 padding: 16px 32px;
-font-family: Tahoma, Verdana, sans-serif;
+font-family: 'Comic Sans MS', sans-serif;
 font-size: 24px;
 border: 3px solid black;
 border-radius: 4px;
@@ -98,7 +105,7 @@ bottom: auto;
 right: auto;
 transform: none;
 padding: 16px 32px;
-font-family: Tahoma, Verdana, sans-serif;
+font-family: 'Comic Sans MS', sans-serif;
 font-size: 24px;
 border: 3px solid black;
 border-radius: 4px;

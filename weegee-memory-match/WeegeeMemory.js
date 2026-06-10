@@ -2,9 +2,10 @@ const COLS = 4, ROWS = 4;
 const TOTAL_TIME = 60;
 
 // Audio Configuration
-const bgMusic = new Audio('Gathering_Darkness.mp3');
+const bgMusic = new Audio('Theme.mp3');
 bgMusic.loop = true;
 const jumpscareSound = new Audio('weegee-evil-laugh.wav');
+const winSound = new Audio('yay.mp3'); // Added winning sound effect
 
 // Web Audio API Context (Initialized lazily on first user interaction)
 let audioCtx = null;
@@ -89,9 +90,9 @@ const CARD_IMAGES = [
     'Weegee-Head-Right.png',
     '__tint_front_red',
     '__tint_front_blue',
+    '__tint_front_purple',
     '__tint_mega_green',
     '__tint_mega_yellow',
-    '__tint_front_purple',
     '__tint_mega_orange',
     '__tint_head_cyan',
     '__tint_head_pink',
@@ -292,6 +293,16 @@ function checkMatch() {
 
         // Play synthesized Web Audio incorrect buzzer
         playWrongBuzzer();
+
+        // Apply a 1-second penalty for a mismatch (clamped so it never drops below 0)
+        timeLeft = Math.max(0, timeLeft - 1);
+        document.getElementById('hud-time').innerText = timeLeft;
+        
+        // Immediately check if the penalty triggered a game over condition
+        if (timeLeft <= 0 && pairsFound < 8) {
+            showLose();
+            return;
+        }
     }
     flipped = [];
     if (gameActive) {
@@ -303,6 +314,7 @@ function hideAllScreens() {
     document.getElementById('start-screen').style.display = 'none';
     document.getElementById('win-screen').style.display = 'none';
     document.getElementById('lose-screen').style.display = 'none';
+    document.getElementById('game-table').style.display = 'none'; // Hides the grid on overlay screens
 }
 
 function showWin() {
@@ -310,9 +322,23 @@ function showWin() {
     canFlip = false;
     clearInterval(timerInterval);
     hideAllScreens();
+
+    // Pause background music and trigger the victory audio track
+    bgMusic.pause();
+    winSound.currentTime = 0;
+    winSound.play().catch(err => console.log("Audio playing error:", err));
+
     document.getElementById('win-stats').innerHTML = 
         'Total Moves: ' + moves + ' | Time Remaining: ' + timeLeft + ' seconds!';
     document.getElementById('win-screen').style.display = 'block';
+
+    // Resumes the background track from exactly where it paused after yay.mp3 plays through
+    // Using a 3-second delay assuming a standard short "yay" sound byte length
+    setTimeout(function() {
+        if (!gameActive) { 
+            bgMusic.play().catch(err => console.log("Audio resume error:", err));
+        }
+    }, 3000);
 }
 
 function showLose() {
@@ -366,7 +392,11 @@ async function startGame() {
     // Hide jumpscare overlay if a game is abruptly restarted
     document.getElementById('jumpscare-overlay').style.display = 'none';
     
+    // Stop victory sound if restarting right after a win to avoid overlapping audio
+    winSound.pause();
+    
     hideAllScreens();
+    document.getElementById('game-table').style.display = 'table'; // Reveal the board when play begins
     moves = 0; 
     pairsFound = 0; 
     flipped = []; 
@@ -378,10 +408,14 @@ async function startGame() {
     
     await prepareAssets();
     buildGridDOM();
+    
+    // Ensure background music track resumes normally on manual quick-restarts
+    bgMusic.play().catch(err => console.log("Audio resume error:", err));
+    
     startTimer();
 }
 
-// Global hook to spin up ambient background music on first core page interaction
+// Global hook to spin up the music theme on first core page interaction
 function initBGMOnInteraction() {
     initAudioContext();
     bgMusic.play().then(() => {

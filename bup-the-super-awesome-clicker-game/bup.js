@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
   var bupAudio = document.getElementById("bupAudio");
   var milestoneAudio = document.getElementById("milestoneAudio");
   const milestones = [
-    { value: 100, description: "Noob," },
+    { value: 100, description: "Loser," },
+    { value: 500, description: "Noob," },
     { value: 1000, description: "Okay," },
     { value: 10000, description: "Nice," },
     { value: 25000, description: "That's crazy," },

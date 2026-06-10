@@ -72,3 +72,47 @@ document.body.addEventListener('click', () => {
     // Start the madness
     playSynthLoop();
 });
+
+// --- LOGO SMOOTH SPIN ANIMATION ---
+const logo = document.querySelector('.main-logo');
+let animationFrameId;
+let currentRotation = 0;
+let isHovered = false;
+
+if (logo) {
+    const logoParent = logo.closest('a');
+
+    function spin() {
+        if (!isHovered) return;
+
+        currentRotation += 3; // Adjust this number to make it spin faster or slower fluidly
+        logo.style.transform = `rotate(${currentRotation}deg)`;
+        
+        // Tell the browser to run this function again on the next screen refresh
+        animationFrameId = requestAnimationFrame(spin);
+    }
+
+    logoParent.addEventListener('mouseenter', () => {
+        isHovered = true;
+        // Temporarily disable CSS transitions so it doesn't fight the smooth JS spin
+        logo.style.transition = 'none'; 
+        
+        // Start the smooth animation loop
+        animationFrameId = requestAnimationFrame(spin);
+    });
+
+    logoParent.addEventListener('mouseleave', () => {
+        isHovered = false;
+        cancelAnimationFrame(animationFrameId);
+        
+        // Re-enable the snappy CSS transition for the landing phase
+        logo.style.transition = 'transform 0.6s cubic-bezier(0.25, 1, 0.5, 1)';
+        
+        // Calculate the next closest full 360-degree turn so it finishes upright smoothly
+        const remainder = currentRotation % 360;
+        currentRotation = currentRotation + (360 - remainder);
+        
+        // Apply the final upright rotation
+        logo.style.transform = `rotate(${currentRotation}deg)`;
+    });
+}

@@ -74,6 +74,7 @@ h1 {
 
 /* Classic App Window styling for the Game Grid Container */
 #game-table {
+    display: none; /* Hidden by default on the main menu */
     margin: 0 auto;
     background-color: #d6d3ce;
     border: 3px solid #0054e3;

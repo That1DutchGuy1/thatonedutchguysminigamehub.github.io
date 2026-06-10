@@ -1,12 +1,15 @@
+Random inspirational quote: Mah boi, this webgame development is what all true programmers strive for!
+
 NEW UPDATE!!
-More progress on the Rick Roller 2D beta version. 
-Changed all the fonts from Bup The Super Awesome Clicker Game to Comic Sans MS. 
-Added the new Philips CD-i Meme Soundboard. 
+Added two new games:
+1: Weegee Memory Match
+2: Weegee's Mansion (beta / WIP)
 
 
 
-This is a work in process minigame hub I made.
-For people who don't know me, I'm retired YouTuber That One Dutch Guy.
+This is a work in process minigame hub I'm currently working on as a side project.
+For people who don't know me, I'm the retired YouTuber That One Dutch Guy.
+Check out some of my videos if you want a quick laugh.
 More minigames will be added in the future.
 
 
@@ -21,13 +24,14 @@ A: Kinda. I tested the game on my Samsung Galaxy S22 and the code works just fin
 Q: When will the site be finished?
 A: I'm uncertain, but my goal is to have at least 5 minigames before the end of 2026 that work completely.
 
+(Edit: Reached that goal! Six games in total now!)
 
 
 Q: Is the code AI generated?
-A: Partially. I did use Google Gemini often to help me out when I got stuck.
+A: Partially. I did use AI often to help me out when I got stuck. But I don't overuse it and I always check the code the AI gives me.
 
 
 
 Q: Will you ever return to making YouTube videos?
-A: Highly unlikely, but I might consider it if I ever have loads of free time again. But if I do, I'll probably make content about web development.
+A: Highly unlikely, but I might consider it if I ever have loads of free time again. But if I do, I'll probably make content that's both about webdevelopment.
 

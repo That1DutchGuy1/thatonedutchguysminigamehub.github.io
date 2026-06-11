@@ -1,5 +1,12 @@
+@font-face {
+  font-family: 'Comic Sans MS';
+  src: url('../Comic-Sans-MS.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
-  font-family: 'Comic Sans MS', cursive;
+  font-family: 'Comic Sans MS', sans-serif, bold;
   font-weight: bold;
   text-align: center;
   background-color: #ffff00; /* Fallback color */
@@ -171,6 +178,7 @@ h1 {
 button {
   background-color: #ff00ff;
   color: white;
+  font-family: 'Comic Sans MS', sans-serif, bold;
   font-size: 24px;
   font-weight: bold;
   padding: 15px 30px;
@@ -218,7 +226,7 @@ button:hover {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  font-family: 'Comic Sans MS', cursive;
+  font-family: 'Comic Sans MS', sans-serif, bold;
   background-color: #ff00ff;
   color: white;
   border: 4px solid #333;
@@ -253,7 +261,7 @@ button:hover {
   bottom: 10px;
   left: 25px;
   text-decoration: none;
-  font-family: 'Comic Sans MS', cursive;
+  font-family: 'Comic Sans MS', sans-serif, bold;
   font-weight: bold;
   font-size: 2rem;
   color: #333;
@@ -271,7 +279,7 @@ button:hover {
   top: 15px;
   left: 15px;
   z-index: 2000;
-  font-family: 'Comic Sans MS', cursive;
+  font-family: 'Comic Sans MS', sans-serif, bold;
   background-color: #ff00ff;
   color: white;
   padding: 10px 20px;

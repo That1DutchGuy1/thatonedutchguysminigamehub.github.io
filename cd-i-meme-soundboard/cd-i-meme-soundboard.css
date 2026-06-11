@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Comic Sans MS';
+  src: url('../Comic-Sans-MS.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
     background: repeating-conic-gradient(#f1c40f 0% 25%, #8CC63F 0% 50%) 50% / 40px 40px;
     min-height: 100%;
@@ -6,7 +13,8 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 80px 20px;
-    font-family: 'Comic Sans MS', cursive;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-weight: bold;
 }
 
 h1 {
@@ -246,7 +254,7 @@ h1 {
     padding: 15px 25px;
     border: 4px solid #92278F; /* Purple border */
     border-radius: 15px;
-    font-family: 'Comic Sans MS', cursive;
+    font-family: 'Comic Sans MS', sans-serif;
     font-size: 20px;
     font-weight: bold;
     color: white;

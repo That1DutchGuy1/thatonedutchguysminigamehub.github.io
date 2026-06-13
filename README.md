@@ -1,9 +1,8 @@
 Random inspirational quote: Mah boi, this webgame development is what all true programmers strive for!
 
 NEW UPDATE!!
-Added two new games:
-1: Weegee Memory Match
-2: Weegee's Mansion (beta / WIP)
+Weegees Mansion (Beta / WIP) got a BIG update with new music, Weegee AI improvements, and various other new feautures!
+Go check it out!
 
 
 

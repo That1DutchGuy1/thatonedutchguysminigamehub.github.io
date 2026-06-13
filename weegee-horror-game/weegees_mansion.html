@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weegee's Mansion</title>
+<link rel="icon" type="image/x-icon" href="./favicon.ico">
+<link rel="stylesheet" href="weegees_mansion.css">
+</head>
+<body>
+<canvas id="gameCanvas"></canvas>
+<div id="ui">
+  <div id="crosshair"></div>
+  <div id="hud">WEEGEE'S MANSION — FLOOR <span id="floor-num">1</span></div>
+  <div id="floor-indicator">FLOOR <span id="floor-num2">1</span> / 5</div>
+  <button id="mobile-pause-btn" onclick="togglePause()">⏸ PAUSE</button>
+  
+  <div id="battery-wrap">
+    <div id="battery-label">LIGHT BATTERY</div>
+    <div id="battery-bar"><div id="battery-fill"></div></div>
+  </div>
+
+  <div id="stamina-wrap">
+    <div id="stamina-label">STAMINA</div>
+    <div id="stamina-bar"><div id="stamina-fill"></div></div>
+  </div>
+
+  <div id="hotbar-wrap">
+    <div class="hotbar-slot" id="slot-0" onclick="useItemSlot(0)"><span class="slot-num">1</span></div>
+    <div class="hotbar-slot" id="slot-1" onclick="useItemSlot(1)"><span class="slot-num">2</span></div>
+    <div class="hotbar-slot" id="slot-2" onclick="useItemSlot(2)"><span class="slot-num">3</span></div>
+    <div class="hotbar-slot" id="slot-3" onclick="useItemSlot(3)"><span class="slot-num">4</span></div>
+  </div>
+
+  <button id="mobile-interact-btn" onclick="mobilePickupInteraction()">PANIC PICKUP</button>
+  <div id="warning"></div>
+  <div id="overlay"></div>
+  <div id="timer-bar-wrap">
+    <div id="timer-bar-label">LOOK AWAY!</div>
+    <div id="timer-bar"><div id="timer-fill"></div></div>
+  </div>
+  <canvas id="arms-overlay"></canvas>
+  <button class="floor-stair-btn" id="stair-btn" onclick="climbStairs()">⬆ NEXT FLOOR</button>
+  
+  <div id="start-screen">
+    <div id="start-vhs-scanlines"></div>
+    <div id="start-vhs-bar"></div>
+    <div id="start-vhs-bar2"></div>
+    <div id="start-vhs-hbar"></div>
+    <div id="start-vhs-hbar2"></div>
+    <div id="start-vhs-rgb-r"></div>
+    <div id="start-vhs-rgb-b"></div>
+    <div id="start-vhs-glitch-layer"></div>
+    <div id="start-vhs-noise"></div>
+    <div id="start-screen-content">
+      <h1>WEEGEE'S<br>MANSION</h1>
+      <p>You are trapped in Weegee's mansion.<br>Reach the top floor to escape.<br><br><strong style="color:#cc6666">Do NOT look into Weegee's eyes.<br>Do NOT touch Weegee.</strong><br><br>W A S D — Move &nbsp;|&nbsp; Shift — Sprint &nbsp;|&nbsp; Mouse — Look<br><strong style="color:#00ffcc">F — Flashlight</strong> &nbsp;|&nbsp; <strong style="color:#ffff00">Q — Pick Up Item</strong><br><strong style="color:#88cc88">1,2,3,4 / Scroll Wheel — Select Item Slots</strong><br><strong style="color:#88cc88">Left Click — Use Selected Slot Item</strong><br><strong style="color:#ffaa00">P — Pause Game</strong><br><br><span style="color:#88cc88">Press SPACE BAR to restart on death screen</span></p>
+      <div class="menu-btn-stack">
+        <button id="start-btn">ENTER THE MANSION</button>
+        <a href="../index.html" id="hub-btn" class="hub-link">← HUB</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="pause-screen">
+    <div class="vhs-overlay"></div>
+    <div class="vhs-bar"></div>
+    <h2>GAME PAUSED</h2>
+    <div class="pause-btn-box">
+      <button class="styled-menu-btn" onclick="togglePause()">RESUME GAME</button>
+      <button class="styled-menu-btn" onclick="quitToMainMenu()">MAIN MENU</button>
+      <a href="../index.html" class="styled-menu-btn">← HUB</a>
+    </div>
+  </div>
+
+  <div id="death-screen">
+    <h2>YOU DIED</h2>
+    <p id="death-msg">Weegee got you.</p>
+    <button onclick="restartGame()">TRY AGAIN</button>
+    <div class="end-btn-row">
+      <button onclick="quitToMainMenu()">MAIN MENU</button>
+      <a href="../index.html" class="styled-menu-btn">← HUB</a>
+    </div>
+  </div>
+  <div id="victory-screen">
+    <h2>YOU ESCAPED!</h2>
+    <p id="victory-msg">You survived all five floors of Weegee's mansion!</p>
+    <button class="victory-btn" onclick="restartGame()">PLAY AGAIN</button>
+    <div class="end-btn-row">
+      <button class="victory-btn" onclick="quitToMainMenu()">MAIN MENU</button>
+      <a href="../index.html" class="victory-btn">← HUB</a>
+    </div>
+  </div>
+  <div id="mobile-controls">
+    <button id="mobile-flash-btn" onclick="toggleFlashlight()">💡 LIGHT ON</button>
+    <button id="mobile-sprint-btn" onclick="toggleMobileSprint()">🏃 SPRINT OFF</button>
+    <div id="joystick-area">
+      <div id="joystick-base"><div id="joystick-knob"></div></div>
+    </div>
+    <div id="look-joystick-area">
+      <div id="look-joystick-base"><div id="look-joystick-knob"></div></div>
+    </div>
+    <div id="look-area"></div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="weegees_mansion.js"></script>
+</body>
+</html>

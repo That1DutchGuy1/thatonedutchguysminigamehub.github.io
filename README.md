@@ -1,6 +1,6 @@
 # 🕹️ That One Dutch Guy's Mini-Game Hub
 
-![Visitors](https://visitorbadge.io)
+![Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FThat1DutchGuy1%2Fthatonedutchguysminigamehub.github.io&count_bg=%2379C0FF&title_bg=%23555555&icon=&icon_color=%23E1E1E1&title=views&edge_flat=false)
 
 > "Mah boi, this webgame development is what all true programmers strive for!" 👑
 

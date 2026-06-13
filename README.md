@@ -1,6 +1,6 @@
 # 🕹️ That One Dutch Guy's Mini-Game Hub
 
-![Hits](https://seeyoufarm.com)
+![Hits](https://hitscounter.dev)
 
 > "Mah boi, this webgame development is what all true programmers strive for!" 👑
 

@@ -1,3 +1,5 @@
+![Visitor Count](https://komarev.com)
+
 Random inspirational quote: Mah boi, this webgame development is what all true programmers strive for!
 
 NEW UPDATE!!

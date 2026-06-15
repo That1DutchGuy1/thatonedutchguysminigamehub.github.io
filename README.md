@@ -9,7 +9,7 @@
 
 ---
 
-> Inspirational quote: "Mah boi, this webgame development is what all true programmers strive for!" 👑👾
+> Inspirational quote: "Mah boi, this webgame development is what all true programmers strive for!" 👑🤓👾
 
 ---
 
@@ -20,12 +20,12 @@
 * Rick Roller 2D (Beta / WIP)
 * Weegee Memory Match (Finished, unless I come up with some big brain additions)
 * Weegee Town XP (Beta / WIP)
-* Weegee's Mansion (Beta / WIP)
+* Weegee's Mansion 3D (Beta / WIP)
 * Whack A Meme (Finished, unless I come up with some big brain additions)
 ---
 
 ### 🚨 NEW UPDATE!!
-**Weegee's Mansion (Beta / WIP)** just got another MASSIVE update! 
+**Weegee's Mansion 3D (Beta / WIP)** just got another MASSIVE update! 
 * 🎵 Even more brand-new Weegee voice lines added!
 * 🌠 A freaking skybox!
 * ⛈️ A whole goddamn weather system with rain and thunder sounds!
@@ -33,8 +33,9 @@
 * 🖼️ New textures for the mansion interior!
 * 🪟 Got BINBOWS now, man!
 
+---
 
-👉🏻 [Go check it out live!](https://that1dutchguy1.github.io/thatonedutchguysminigamehub.github.io/)
+> 👉🏻 [Go check it out live!](https://that1dutchguy1.github.io/thatonedutchguysminigamehub.github.io/)
 
 ---
 

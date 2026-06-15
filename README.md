@@ -1,18 +1,40 @@
 # 🕹️ That One Dutch Guy's Mini-Game Hub
 
-![Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FThat1DutchGuy1%2Fthatonedutchguysminigamehub.github.io&count_bg=%2379C0FF&title_bg=%23555555&icon=&icon_color=%23E1E1E1&title=views&edge_flat=false)
-
-> "Mah boi, this webgame development is what all true programmers strive for!" 👑
+<div style="display: flex; flex-direction: column; align-items: flex-start; gap: 10px;">
+  <a href="https://www.youtube.com/@That1DutchGuy">
+    <img src="That-One-Dutch-Guy-Channel-Logo-Circle.png" alt="My YouTube Channel" width="150" />
+  </a>
+  <img src="That-One-Dutch-Guy-Logo-Text.png" alt="That One Dutch Guy" width="150" />
+</div>
 
 ---
 
-### 🚨 NEW UPDATE!!
-**Weegee's Mansion (Beta / WIP)** just got a MASSIVE update! 
-* 🎵 Brand-new music added
-* 🧠 Enhanced Weegee AI tracking improvements
-* 🛠️ Various other gameplay features and optimizations
+> Inspirational quote: "Mah boi, this webgame development is what all true programmers strive for!" 👑🤓👾
 
-👉 [Go check it out live!](https://that1dutchguy1.github.io/thatonedutchguysminigamehub.github.io/)
+---
+
+### 🎮️ List of currently available minigames
+
+* Bup The Super Awesome Clicker Game (Finished, unless I come up with some big brain additions)
+* Philips CD-i Meme Soundboard (Finished, unless I come up with some big brain additions)
+* Rick Roller 2D (Beta / WIP)
+* Weegee Memory Match (Finished, unless I come up with some big brain additions)
+* Weegee Town XP (Beta / WIP)
+* Weegee's Mansion (Beta / WIP)
+* Whack A Meme (Finished, unless I come up with some big brain additions)
+---
+
+### 🚨 NEW UPDATE!!
+**Weegee's Mansion (Beta / WIP)** just got another MASSIVE update! 
+* 🎵 Even more brand-new Weegee voice lines added!
+* 🌠 A freaking skybox!
+* ⛈️ A whole goddamn weather system with rain and thunder sounds!
+* 💦 Leaky ass ceiling with rain drops falling through it! (wasn't an intentional feature, but hey ho)
+* 🖼️ New textures for the mansion interior!
+* 🪟 Got BINBOWS now, man!
+
+
+👉🏻 [Go check it out live!](https://that1dutchguy1.github.io/thatonedutchguysminigamehub.github.io/)
 
 ---
 
@@ -25,14 +47,19 @@ For those who don't know me, I am a retired YouTuber known as **That One Dutch G
 
 ### 💬 Q & A
 
-**Q: Is this mobile friendly?**  
-**A:** Kinda! I tested the game on my Samsung Galaxy S22 and the backend code executes just fine, but the visual layout can still get a bit messy on small viewports.
+**Q: Is this site mobile friendly?**  
+**A:** Meh. While the games usually work just fine in terms of functionality. But we don't talk about the layout... 🙃
 
 **Q: When will the site be finished?**  
-**A:** I'm uncertain about a final release date, but my initial milestone was to have at least 5 working minigames before the end of 2026. *(Edit: Reached that goal ahead of schedule! Six games are now completely live in total!)*
+**A:** Honestly? I don't know. Maybe when I run out of inspiration, but that ain't gonna happen anytime soon! 👍🏻
 
 **Q: Is the code AI generated?**  
-**A:** Partially. I frequently leverage AI tools to help me debug and brainstorm when I get stuck. However, I make sure not to overuse it, and I meticulously verify every snippet of code the AI provides before merging it.
+**A:** Partially. I frequently use AI tools to help me debug and brainstorm when I get stuck. However, I make sure not to overuse it, and I meticulously verify every snippet of code the AI provides before merging it. Don't judge me. 🤷🏻‍♂️
 
 **Q: Will you ever return to making YouTube videos?**  
-**A:** Highly unlikely. However, I might consider creating new content if I ever find myself with an abundance of free time down the road. If I do make a return, the content will likely focus on web development topics!
+**A:** Highly unlikely. However, I might consider creating new content if I ever find myself with an abundance of free time down the road. If I do make a return, the content will likely focus on web development topics! 🌐
+
+**Q: How do you come up with this beautiful shit?**
+**A:** Having both autism and ADHD, and having hyperfocuses on both stupid old memes and webdev! 🤣
+
+---

@@ -25,8 +25,8 @@ body {
   font-family: 'Comic Sans MS', sans-serif, bold;
   font-weight: bold;
   /* Animated Meme Background */
-  background: linear-gradient(-45deg, #ffff00, #ff00ff, #00ffff, #7bff00);
-  background-size: 400% 400%;
+  background: linear-gradient(-45deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3, #FF13F0, #ff0000);
+  background-size: 300% 300%;
   animation: meme-wave 10s ease infinite;
   color: #333;
   text-align: center;
@@ -54,14 +54,13 @@ body {
 }
 
 @keyframes meme-wave {
-  0% { background-position: 0% 50%; }
+  0% { background-position: 0% 0%; }
   50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  100% { background-position: 0% 0%; }
 }
 
 h1 {
   font-size: 4rem;
-  text-shadow: 4px 4px 0px #fff;
   margin-top: 10px;
   margin-bottom: 40px;
   text-transform: uppercase;
@@ -93,7 +92,7 @@ h1 {
 }
 
 .game-card h3 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   margin-top: 0;
   color: #333;
 }
@@ -104,19 +103,25 @@ h1 {
   margin-bottom: 25px;
 }
 
+/* Rainbow Spinning Play Button */
 .play-button {
   display: inline-block;
-  background-color: #ff00ff;
-  color: white;
+  background: conic-gradient(
+    from var(--spin-angle), 
+    red, orange, yellow, green, cyan, blue, magenta, red
+  );
+  
+  color: black;
   font-size: 1.5rem;
   font-weight: bold;
   padding: 15px 30px;
   border: 4px solid #333;
   border-radius: 15px;
   text-decoration: none;
-  transition: transform 0.1s, background-color 0.2s;
   cursor: pointer;
   margin-top: auto;
+  animation: spin-text-rainbow 2s linear infinite; 
+  transition: transform 0.1s; 
 }
 
 .play-button:hover {
@@ -147,4 +152,37 @@ h1 {
 /* Simply add a pointer cursor on hover */
 .brand-header a:hover .main-logo {
   cursor: pointer;
+}
+
+/* =========================================
+   SPINNING CONIC RAINBOW TEXT 
+   ========================================= */
+
+/* 1. Define a custom angle variable that the browser knows how to animate */
+@property --spin-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+/* Rainbow spinning text for the main header and game titles */
+h1, .game-card h3 {
+  background: conic-gradient(
+    from var(--spin-angle), 
+    red, orange, yellow, green, cyan, blue, magenta, red
+  );
+  
+  /* Clip the spinning gradient strictly to the shape of the text */
+  color: transparent !important;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-stroke: 2px #000;
+  text-shadow: none;
+  animation: spin-text-rainbow 2s linear infinite; 
+}
+
+/* The keyframes that rotate the gradient angle from 0 to 360 degrees */
+@keyframes spin-text-rainbow {
+  0% { --spin-angle: 0deg; }
+  100% { --spin-angle: 360deg; }
 }

@@ -9,7 +9,7 @@
 
 ---
 
-> Inspirational quote: "Mah boi, this webgame development is what all true programmers strive for!" 👑🤓👾
+> Inspirational quote: "Mah boi, this webgame development is what all true programmers strive for!" 👑👾
 
 ---
 

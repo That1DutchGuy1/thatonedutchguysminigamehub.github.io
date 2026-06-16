@@ -24,7 +24,7 @@
 * Whack A Meme (Finished, unless I come up with some big brain additions)
 ---
 
-### 🚨 NEW UPDATE!!
+### 🚨 NEW GAME UPDATE!!
 **Weegee's Mansion 3D (Beta / WIP)** just got another MASSIVE update! 
 * 🎵 Even more brand-new Weegee voice lines added!
 * 🌠 A freaking skybox!
@@ -32,6 +32,14 @@
 * 💦 Leaky ass ceiling with rain drops falling through it! (wasn't an intentional feature, but hey ho)
 * 🖼️ New textures for the mansion interior!
 * 🪟 Got BINBOWS now, man!
+
+---
+
+### 🚨 NEW HUB VISUAL UPDATE!!
+
+* 🌈 New animated shifting rainbow background!
+*  🌈 ANIMATED RAINBOW COMIC SANS MS EVERYWHERE!
+*  🌈 Animated rainbow Play buttons!
 
 ---
 

@@ -1,8 +1,15 @@
+@font-face {
+  font-family: 'Comic Sans MS';
+  src: url('../Comic-Sans-MS.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    font-family: 'Comic Sans MS', cursive;
+    font-family: 'Comic Sans MS', sans-serif, bold;
     background-image: url('rickrollfilminglocation.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -71,7 +78,7 @@ canvas {
 a {
     text-align: right;
     text-decoration: none;
-    font-family: 'Comic Sans MS', cursive;
+    font-family: 'Comic Sans MS', sans-serif, bold;
     font-size: 21px;
     font-weight: bold;
     color: white;
@@ -88,7 +95,7 @@ a {
     bottom: auto;
     right: auto;
     padding: 16px 32px;
-    font-family: 'Comic Sans MS', cursive;
+    font-family: 'Comic Sans MS', sans-serif, bold;
     font-size: 24px;
     border: 3px solid black;
     border-radius: 4px;
